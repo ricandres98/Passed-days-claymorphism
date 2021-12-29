@@ -1,0 +1,123 @@
+:root {
+    --primary-color-1: #39BABD;
+    --primary-color-2: #2C9294;
+    --primary-color-3: #50B1B3;
+    --primary-color-4: #5CCACC;
+    --dark-color-1: #021414;
+    --light-color: #F2F5F5;
+    --space-unit:5px;
+    --font-1: 'Roboto', sans-serif;
+    --font-2: 'Bungee', cursive;
+    --shadow-1: 10px 20px 30px var(--primary-color-2), inset -5px -10px 30px var(--primary-color-3);
+    --shadow-2: 20px 20px 48px #40797a, inset -12px -8px 30px var(--primary-color-2), inset 12px 8px 30px #adeced;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: 62.5%;
+}
+
+body {
+    padding: 0 30px;
+    font-family: var(--font-1);
+    color: var(--dark-color-1);
+    background-color: var(--primary-color-1);
+}
+header {
+    max-width: 1200px;
+    height: 200px;
+    padding: 50px;
+    margin: 50px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--light-color);
+    box-shadow: var(--shadow-1);
+    border-radius: 30px;
+}
+header h1 {
+    font-family: var(--font-2);
+    font-size: 2.6rem; 
+    text-align: center;
+}
+main {
+    width: 100%;
+    height: 100%;
+    font-size: 2rem;
+}
+div.main__box {
+    max-width: 500px;
+    min-height: 400px;
+    margin: 0px auto 40px;
+    padding: 30px;
+    border-radius: 30px;
+    background-color: var(--light-color);
+    box-shadow: var(--shadow-1);
+}
+div.main__box > span {
+    display: block;
+    margin-bottom: calc(8 * var(--space-unit));
+    text-align: center;
+}
+.main__box form label{
+    display: block;
+    margin-bottom: calc(4 * var(--space-unit));
+}
+.main__box form label span {
+    display: block;
+    margin-bottom: var(--space-unit);
+    font-weight: 500;
+}
+.main__box form label input {
+    width: 100%;
+    padding: 5px 10px;
+    border-radius: 4px;
+    border: 1px solid var(--dark-color-1);
+    font-size: 2rem;
+    font-family: var(--font-1);
+    color: gray;
+    background-color: inherit;
+}
+.main__box form label input:focus-visible {
+    outline: 1px solid var(--dark-color-1);
+}
+.main__box form button {
+    display: block;
+    padding: 10px 32.5px;
+    border: none;
+    margin: 40px auto;
+    font-size: 1.8rem;
+    font-family: var(--font-2);
+    color: var(--dark-color-1);
+    background-color: var(--primary-color-1); 
+    border-radius: 20px;
+    box-shadow: 5px 10px 20px rgb(175 169 169), inset -12px -8px 16px var(--primary-color-2), inset 12px 8px 16px var(--primary-color-3);
+    cursor: pointer;
+}
+.main__box form button:active {
+    background-color: var(--primary-color-2);
+}
+.main__box > span.result {
+    display: none;
+    margin: 40px;
+    font-weight: bold;
+    font-size: 2.5rem;
+}
+
+/*------------------
+--- media queries --
+------------------*/
+@media (min-width: 425px) {
+    div.main__box {
+        padding: 50px;
+    }
+}
+@media (min-width: 768px){
+    header h1 {
+        font-size: 4rem;
+    }
+    
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hace cuántos días naciste</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+<body>
+    <header>
+        <h1>¿Cuántos días han pasado?</h1>
+    </header>
+    <main>
+        <div class="main__box">
+            <span>Ingresa dos fechas para saber cuántos días han pasado entre estas:</span>
+            <form action="">
+               <label for="initial-date">
+                   <span>Fecha inicial</span>
+                   <input placeholder="1998-02-27" type="date" name="" id="initial-date" title="Ingrese fecha inicial">
+                </label>
+               <label for="final-date">
+                   <span>Fecha final</span>
+                   <input type="date" name="" id="final-date" title="Ingrese fecha final">
+                </label>
+                <button type="button"id="button">¡Vamos!</button>
+            </form>
+            <span id="result" class="result"></span>
+        </div>
+    </main>
+    <script src="./js/days.js"></script>
+    <script src="./js/styles.js"></script>
+</body>
+</html>
