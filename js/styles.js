@@ -1,5 +1,5 @@
-var initialDate = document.getElementById('initial-date');
-var finalDate = document.getElementById('final-date');
+initialDate = document.getElementById('initial-date');
+finalDate = document.getElementById('final-date');
 
 document.addEventListener("mouseover", color);
 document.addEventListener("keydown", color);

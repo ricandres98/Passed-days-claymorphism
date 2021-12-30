@@ -57,7 +57,7 @@ div.main__box {
     background-color: var(--light-color);
     box-shadow: var(--shadow-1);
 }
-div.main__box > span {
+div.main__box > p {
     display: block;
     margin-bottom: calc(8 * var(--space-unit));
     text-align: center;
@@ -100,7 +100,7 @@ div.main__box > span {
 .main__box form button:active {
     background-color: var(--primary-color-2);
 }
-.main__box > span.result {
+.main__box > p.result {
     display: none;
     margin: 40px;
     font-weight: bold;
